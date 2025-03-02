@@ -1,0 +1,76 @@
+/* 🌟 About Us Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 996px;
+    margin: auto;
+    padding: 60px 5%;
+    background-color: #f8fbff; /* Light background */
+}
+
+/* 🌟 Left Side - Text */
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a0a0a;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #3d3d3d;
+    margin-top: 10px;
+}
+
+.about-text p span {
+    color: #0044cc;
+    font-weight: bold;
+}
+
+/* 🌟 Right Side - Image */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .about-image img {
+        max-width: 280px;
+    }
+}

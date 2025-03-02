@@ -1,0 +1,90 @@
+.timeline {
+    background-color: #f5f9fc;
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timeline-container {
+    max-width: 996px;
+    width: 100%;
+  }
+  
+  .timeline-subtitle {
+    color: #008000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 12px;
+  }
+  
+  .timeline-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  /* Swiper Styling */
+  .timeline-slider {
+    padding: 20px 0;
+  }
+  
+  .timeline-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .timeline-icon {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .timeline-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Swiper Navigation Buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #003366 !important;
+    font-size: 20px !important;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .timeline-slider {
+      padding: 10px 0;
+    }
+  
+    .timeline-card {
+      padding: 15px;
+    }
+  
+    .timeline-title {
+      font-size: 28px;
+    }
+  
+    .timeline-description {
+      font-size: 14px;
+    }
+  }
+  

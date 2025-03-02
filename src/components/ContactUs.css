@@ -1,0 +1,76 @@
+/* 🌟 Contact Us Section */
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 996px;
+    margin: auto;
+    padding: 60px 5%;
+    background-color: #f8fbff; /* Light background */
+}
+
+/* 🌟 Left Side - Text */
+.contact-text {
+    flex: 1;
+}
+
+.contact-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a0a0a;
+}
+
+.contact-text p {
+    font-size: 1rem;
+    color: #3d3d3d;
+    margin-top: 10px;
+}
+
+.contact-text p span {
+    color: #0044cc;
+    font-weight: bold;
+}
+
+/* 🌟 Right Side - Image */
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .contact-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
+
+    .contact-image {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact-text h1 {
+        font-size: 2rem;
+    }
+
+    .contact-text p {
+        font-size: 0.9rem;
+    }
+
+    .contact-image img {
+        max-width: 280px;
+    }
+}

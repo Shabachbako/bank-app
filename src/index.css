@@ -1,0 +1,130 @@
+/* Import Google Fonts for a modern, professional look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Default Light Theme */
+  --primary-color: #0044cc; /* Bank blue */
+  --secondary-color: #0066ff; /* Slightly lighter blue */
+  --text-color: #213547;
+  --background-color: #f4f7fc;
+  --link-color: #0056b3;
+  --link-hover: #004299;
+  --border-radius: 8px;
+  --button-bg: #0044cc;
+  --button-text: #ffffff;
+  --button-hover: #0033aa;
+
+  /* Dark Mode */
+  --dark-text-color: rgba(255, 255, 255, 0.87);
+  --dark-bg: #121212;
+  --dark-card-bg: #1a1a1a;
+  --dark-button-bg: #0056b3;
+  --dark-button-hover: #004299;
+  
+  font-family: 'Inter', 'Poppins', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🌟 Links */
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: var(--link-hover);
+}
+
+/* 🌟 Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* 🌟 Buttons */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.03);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--link-hover);
+}
+
+/* 🌟 Navigation Bar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: var(--background-color);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌟 Cards (For sections like services, features, etc.) */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  button {
+    width: 100%;
+  }
+}
+
+/* 🌟 Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--dark-text-color);
+    background-color: var(--dark-bg);
+  }
+  
+  a {
+    color: var(--dark-button-bg);
+  }
+  
+  button {
+    background-color: var(--dark-button-bg);
+  }
+  
+  button:hover {
+    background-color: var(--dark-button-hover);
+  }
+
+  .card {
+    background-color: var(--dark-card-bg);
+  }
+}

@@ -1,0 +1,148 @@
+/* 🌟 Mobile Banking Section */
+.mobile-banking {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 5%;
+    background-color: #f9fcff;
+    max-width: 996px;
+    margin: auto;
+    gap: 100px; /* Matches the spacing in Invest Section */
+}
+
+/* 🌟 Left Content */
+.banking-text {
+    max-width: 50%;
+}
+
+/* 🌟 Title with Shield Icon */
+.banking-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shield-icon {
+    font-size: 30px;
+    color: #0044cc;
+    background-color: #e6f0ff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Heading Styles */
+.banking-text h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #006400;
+}
+
+.banking-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin: 10px 0;
+}
+
+.banking-text h2 span {
+    color: #0044cc;
+}
+
+/* Paragraph */
+.banking-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+/* 🌟 Features List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+
+.check-icon {
+    color: #008000;
+    font-size: 1.2rem;
+}
+
+/* 🌟 Download Buttons */
+.download-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.download-buttons img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.download-buttons img:hover {
+    transform: scale(1.05);
+}
+
+/* 🌟 Right Side Image */
+.banking-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banking-image img {
+    width: 100%;
+    max-width: 450px; /* Matches Invest Section image size */
+    height: auto;
+    display: block;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .mobile-banking {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banking-text {
+        max-width: 100%;
+    }
+
+    .banking-image {
+        width: 100%;
+    }
+
+    .banking-image img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+    .mobile-banking {
+        padding: 30px 5%;
+    }
+
+    .banking-text h2 {
+        font-size: 2rem;
+    }
+
+    .banking-text p {
+        font-size: 1rem;
+    }
+
+    .download-buttons img {
+        width: 120px;
+    }
+}

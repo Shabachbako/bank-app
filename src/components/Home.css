@@ -1,0 +1,154 @@
+/* 🌟 Home Section - Matches Contact Us Style */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 5%;
+    background-color: #f9fbfe; 
+}
+
+/* 🌟 Home Container */
+.home-container {
+    max-width: 996px;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🌟 Left Content */
+.home-content {
+    max-width: 90%;
+}
+
+/* 🌟 Heading & Highlight */
+.home-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin: 10px 0;
+}
+
+.home-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* 🌟 Highlighted text */
+.highlight {
+    color: #006400; /* Dark Green */
+    font-weight: 700;
+}
+
+/* 🌟 Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.primary-btn {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+    background-color: #0033aa;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #0044cc;
+    border: 2px solid #0044cc;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.secondary-btn:hover {
+    background-color: #0044cc;
+    color: white;
+}
+
+/* 🌟 Image Section */
+.home-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 30px 20px;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 0.95rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .home-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-container {
+        padding: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    .home-image {
+        max-width: 100%;
+    }
+}

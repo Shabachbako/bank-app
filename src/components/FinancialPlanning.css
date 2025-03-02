@@ -1,0 +1,164 @@
+/* 🌟 Financial Planning Section */
+.financial-planning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+    max-width: 996px;
+    margin: auto;
+    gap: 50px;
+}
+
+/* 🌟 Left Section */
+.financial-content {
+    flex: 1;
+    max-width: 45%;
+}
+
+.financial-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #006400;
+}
+
+.financial-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin: 10px 0;
+}
+
+.financial-content h2 span {
+    color: #0044cc;
+}
+
+.financial-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+/* 🌟 Apply Button */
+.apply-button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.apply-button:hover {
+    background-color: #002f99;
+}
+
+/* 🌟 Loan Options (Right Section) */
+.loan-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+    max-width: 50%;
+}
+
+/* 🌟 Loan Card */
+.loan-card {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.loan-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 🌟 Icons */
+.icon-container {
+    background: #e6f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.loan-icon {
+    font-size: 1.5rem;
+    color: #0044cc;
+}
+
+/* 🌟 Loan Titles */
+.loan-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* 🌟 Benefits List */
+.loan-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.loan-card ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 300;
+    gap: 8px;
+}
+
+.check-icon {
+    color: #008000;
+    font-size: 1.2rem;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .financial-planning {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .financial-content {
+        max-width: 100%;
+    }
+
+    .loan-options {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .apply-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .financial-planning {
+        padding: 30px 5%;
+    }
+
+    .financial-content h2 {
+        font-size: 2rem;
+    }
+
+    .financial-content p {
+        font-size: 1rem;
+    }
+
+    .loan-card {
+        padding: 15px;
+    }
+}

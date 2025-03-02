@@ -1,0 +1,86 @@
+.values {
+    background-color: #f5f9fc; /* Light blue background */
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .values-container {
+    max-width: 996px;
+    width: 100%;
+  }
+  
+  .values-subtitle {
+    color: #008000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .values-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 12px;
+  }
+  
+  .values-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  .values-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .value-card {
+    background: transparent;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .value-icon {
+    background-color: #003366;
+    color: white;
+    font-size: 32px;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    width: 25%;
+  }
+  
+  .value-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .value-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .values-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .value-card {
+      max-width: 80%;
+    }
+  }
+  

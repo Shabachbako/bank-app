@@ -1,0 +1,131 @@
+/* 🌟 Business Solutions Section */
+.business-solutions {
+    text-align: center;
+    padding: 60px 5%;
+    background-color: #f9fcff;
+    max-width: 996px;
+    margin: auto;
+}
+
+/* 🌟 Header Styling */
+.business-header h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #006400;
+}
+
+.business-header h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin: 10px 0;
+}
+
+.business-header h2 span {
+    color: #0044cc;
+}
+
+.business-header p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* 🌟 Account Options */
+.account-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* 🌟 Individual Account Cards */
+.account-card {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.account-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 🌟 Account Icons */
+.account-icon {
+    font-size: 50px;
+    color: #0044cc;
+    background-color: #e6f0ff;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+}
+
+/* 🌟 Account Titles */
+.account-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #0a0a0a;
+    margin-bottom: 10px;
+}
+
+/* 🌟 Account Description */
+.account-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* 🌟 Account Links */
+.account-card a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0044cc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.account-card a:hover {
+    color: #002288;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .account-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .account-card {
+        width: 100%;
+    }
+
+    .business-header h2 {
+        font-size: 2rem;
+    }
+
+    .business-header p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .business-solutions {
+        padding: 40px 5%;
+    }
+
+    .business-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .business-header p {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,159 @@
+/* 🌟 Notifications Section */
+.notifications {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 5%;
+    background-color: #fff;
+    max-width: 996px;
+    margin: auto;
+    gap: 50px; /* Adjusted for better spacing */
+}
+
+/* 🌟 Left Content */
+.notifications-content {
+    max-width: 50%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bell-icon {
+    font-size: 24px;
+    color: #0044cc;
+    background-color: #e6f0ff;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+/* Heading Styles */
+.notifications-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #006400;
+}
+
+.notifications-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin: 10px 0;
+}
+
+.notifications-content h2 span {
+    color: #0044cc;
+}
+
+/* Paragraph */
+.notifications-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+/* 🌟 Benefits List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 10px;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.check-icon {
+    color: #008000;
+    font-size: 1rem;
+}
+
+/* 🌟 Right Image */
+.notifications-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .notifications {
+        flex-direction: column;
+        text-align: left; /* Ensures left alignment */
+        gap: 30px;
+    }
+
+    .notifications-content {
+        max-width: 100%;
+        padding: 0 8%;
+    }
+
+    .notifications-image {
+        width: 80%;
+    }
+
+    .notifications-image img {
+        max-width: 100%;
+    }
+}
+
+/* 📱 Mobile: 375px */
+@media (max-width: 375px) {
+    .notifications {
+        padding: 30px 5%;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left; /* Aligns content to the left */
+    }
+
+    .notifications-content {
+        max-width: 100%;
+        padding: 0 6%;
+    }
+
+    .title {
+        justify-content: flex-start;
+    }
+
+    .notifications-content h2 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .notifications-content p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    ul li {
+        font-size: 0.85rem;
+    }
+
+    .notifications-image {
+        width: 100%;
+    }
+
+    .notifications-image img {
+        max-width: 95%;
+    }
+}
