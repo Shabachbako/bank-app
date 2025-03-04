@@ -46,7 +46,6 @@ const Navbar = () => {
         </li>
         <li><NavLink to="/about">About Us</NavLink></li>
         <li><NavLink to="/product">Product</NavLink></li>
-        <li><NavLink to="/pages">Pages</NavLink></li>
         <li><NavLink to="/contact">Contact Us</NavLink></li>
       </ul>
 
@@ -65,7 +64,6 @@ const Navbar = () => {
           </li>
           <li><NavLink to="/about" onClick={toggleMenu}>About Us</NavLink></li>
           <li><NavLink to="/product" onClick={toggleMenu}>Product</NavLink></li>
-          <li><NavLink to="/pages" onClick={toggleMenu}>Pages</NavLink></li>
           <li><NavLink to="/contact" onClick={toggleMenu}>Contact Us</NavLink></li>
         </ul>
 

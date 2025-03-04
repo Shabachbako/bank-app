@@ -13,6 +13,7 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import AboutPages from "./components/AboutPages"; // Import AboutPages
 import ContactPage from "./components/ContactPage";
+import ProductPage from "./components/ProductPage";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         {/* ✅ About Page */}
         <Route path="/about" element={<AboutPages />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/product" element={<ProductPage />} />
       </Routes>
 
       <Footer /> {/* ✅ Footer always visible */}

@@ -1,0 +1,167 @@
+/* 🌟 Hero Section - Matches Home Section Style */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 5%;
+    background-color: #f9fbfe; 
+}
+
+/* 🌟 Hero Container */
+.hero-container {
+    max-width: 996px;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 🌟 Hero Content */
+.hero-content {
+    max-width: 90%;
+}
+
+/* 🌟 Subtitle */
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+/* 🌟 Title */
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin: 10px 0;
+}
+
+/* 🌟 Description */
+.hero-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* 🌟 Call to Action Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* 🌟 Primary Button */
+.primary-btn {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+    background-color: #0033aa;
+}
+
+/* 🌟 Secondary Button */
+.secondary-btn {
+    background-color: white;
+    color: #0044cc;
+    border: 2px solid #0044cc;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.secondary-btn:hover {
+    background-color: #0044cc;
+    color: white;
+}
+
+/* 🌟 Hero Image */
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 30px 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .hero-image {
+        max-width: 80%;
+    }
+}
+
+/* 📱 Mobile Responsive for 375px */
+@media (max-width: 375px) {
+    .hero-container {
+        padding: 20px;
+        text-align: left; /* ✅ Left-align text for mobile */
+    }
+
+    .hero-content {
+        text-align: left; /* ✅ Left-align content */
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start; /* ✅ Buttons left-aligned */
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}

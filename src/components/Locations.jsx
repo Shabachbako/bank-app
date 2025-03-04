@@ -1,23 +1,33 @@
 import React from "react";
 import "./Locations.css";
-import mapImage from "../assets/map.png"; // Import the map image
+import mapImage from "../assets/map.png"; // Update path if needed
 import { FaMapMarkerAlt } from "react-icons/fa"; // React Icons for location pins
 
 const locations = [
   {
     id: 1,
     address: "2715 Ash Dr. San Jose, South Dakota 83475",
-    style: { top: "60%", left: "30%" }, // Adjust position for correct placement
+    style: { top: "20%", left: "25%" }, // Adjusted position
   },
   {
     id: 2,
     address: "2972 Westheimer Rd. Santa Ana, Illinois 85486",
-    style: { top: "40%", left: "65%" }, // Adjust position for correct placement
+    style: { top: "50%", left: "75%" }, // Adjusted position
   },
   {
     id: 3,
-    address: "2715 Ash Dr. San Jose, South Dakota 83475",
-    style: { top: "75%", left: "50%" }, // Adjust position for correct placement
+    address: "8432 Winding Way, Austin, Texas 73301",
+    style: { top: "80%", left: "40%" }, // Adjusted position
+  },
+  {
+    id: 4,
+    address: "455 Larkspur Dr. California Springs, California 92926",
+    style: { top: "30%", left: "60%" }, // New location
+  },
+  {
+    id: 5,
+    address: "1702 West Dr. Atlanta, Georgia 30301",
+    style: { top: "70%", left: "15%" }, // New location
   },
 ];
 

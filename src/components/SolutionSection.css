@@ -1,0 +1,129 @@
+/* 🌎 Locations Section */
+.locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5%;
+    background-color: #f8fbff;
+}
+
+/* 🌎 Container */
+.locations-container {
+    max-width: 996px;
+    width: 100%;
+    text-align: center;
+}
+
+/* 🌎 Titles & Description */
+.locations-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0044cc;
+    text-transform: uppercase;
+}
+
+.locations-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin: 10px 0;
+}
+
+.locations-description {
+    font-size: 1rem;
+    color: #3d3d3d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* 🌎 Map Container */
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.map-image {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* 📍 Location Markers */
+.location-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marker-icon {
+    font-size: 1.5rem;
+    color: red;
+    animation: bounce 1.5s infinite;
+}
+
+.location-address {
+    background: white;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #0a0a0a;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Show address on hover */
+.location-marker:hover .location-address {
+    display: block;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .locations-title {
+        font-size: 1.8rem;
+    }
+
+    .locations-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .locations-container {
+        padding: 20px;
+    }
+
+    .locations-title {
+        font-size: 1.6rem;
+    }
+
+    .locations-description {
+        font-size: 0.9rem;
+    }
+
+    .location-address {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+
+    .marker-icon {
+        font-size: 1.2rem;
+    }
+}
+
+/* 🔥 Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
